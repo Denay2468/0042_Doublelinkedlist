@@ -59,9 +59,15 @@ class DoublyLinkedList {
 
          if (current->next != NULL)
             current->next->prev = newNode;
-         current->next = newNode;
+         current->next = newNode;      
+    }
 
-           
+    void hapus(){
+         if (START == NULL) {
+            cout << "sklist is empty" << endl;
+            return;
+        }
+
     }
 };
 
