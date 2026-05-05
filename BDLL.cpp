@@ -138,6 +138,28 @@ class DoublyLinkedList {
         }
 
     }
+
+        void searchData() {
+        if (START == NULL) {
+            cout << "sklist is empty" << endl;
+        }
+
+        int rollNo;
+        cout << "Enter the roll number to search: ";
+        cin >> rollNo;
+
+        Node *current = START;
+
+        while (current != NULL && current->nuMo != rollNo)
+            current = current->next;
+
+        if (current == NULL) {
+            cout << "Record not found";
+        } else {
+            cout << "Record found!";
+            cout << "Roll number: " << current->nuMo << endl;
+        }
+    }
 };
 
 
