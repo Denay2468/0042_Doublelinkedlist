@@ -45,6 +45,15 @@ class DoublyLinkedList {
 
           }
 
+           Node *current = START;
+        while (current->next != NULL && current->next->nuMo < nim)
+            current = current->next;
+
+        if (current->next != NULL && nim == current->next->nuMo) {
+            cout << "Unduplicate roll numbers not allowed" << endl;
+            return;
+        }
+
            
     }
 };
