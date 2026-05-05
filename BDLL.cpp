@@ -36,6 +36,13 @@ class DoublyLinkedList {
                 return;
             }
 
+            if (START != NULL)
+                START->prev = newNode;
+            newNode->next = START;
+            newNode->prev = NULL;
+            START = newNode;
+            return;
+
           }
 
            
