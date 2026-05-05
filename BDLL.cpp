@@ -18,9 +18,9 @@ class DoublyLinkedList {
     public:
         DoublyLinkedList() {
             START = NULL;
-    }
+        }
 
-    void addError(){
+    void addEnd(){
         int nim;
           cout << "Enter the roll number of the student: ";
           cin >> nim;
@@ -64,7 +64,7 @@ class DoublyLinkedList {
 
     void hapus(){
          if (START == NULL) {
-            cout << "sklist is empty" << endl;
+            cout << "list is empty" << endl;
             return;
         }
 
@@ -101,7 +101,7 @@ class DoublyLinkedList {
 
     void Traversal(){
           if (START == NULL) {
-            cout << "sklist is empty" << endl;
+            cout << "list is empty" << endl;
             return;
         }
 
@@ -119,7 +119,7 @@ class DoublyLinkedList {
     void ReverseTraversal(){
 
         if (START == NULL) {
-            cout << "sklist is empty" << endl;
+            cout << "list is empty" << endl;
             return;
         }
 
@@ -132,7 +132,7 @@ class DoublyLinkedList {
 
         cout << "Records in descending order of roll number are:\n";
         while (currentNode != NULL) {
-            cout << i + 1 << ". " << currentNode->nuMo << " " << endl;
+            cout << i << ". " << currentNode->nuMo << " " << endl;
             currentNode = currentNode->prev;
             i--;
         }
@@ -141,7 +141,8 @@ class DoublyLinkedList {
 
         void searchData() {
         if (START == NULL) {
-            cout << "sklist is empty" << endl;
+            cout << "list is empty" << endl;
+            return;
         }
 
         int rollNo;
@@ -156,7 +157,7 @@ class DoublyLinkedList {
         if (current == NULL) {
             cout << "Record not found";
         } else {
-            cout << "Record found!";
+            cout << "Record found!" << endl;
             cout << "Roll number: " << current->nuMo << endl;
         }
     }
