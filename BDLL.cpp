@@ -11,8 +11,14 @@ class Node
 };
 
 class DoublyLinkedList {
-private:
-    Node *START;
+    private:
+        Node *START;
+    public:
+        DoublyLinkedList() {
+            START = NULL;
+    }
+
+
 };
 
 
