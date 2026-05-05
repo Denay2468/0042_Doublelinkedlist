@@ -116,6 +116,28 @@ class DoublyLinkedList {
         }
 
     }
+    void ReverseTraversal(){
+
+        if (START == NULL) {
+            cout << "sklist is empty" << endl;
+            return;
+        }
+
+        Node *currentNode = START;
+        int i = 0;
+        while (currentNode->next != NULL) {
+            currentNode = currentNode->next;
+            i++;
+        }
+
+        cout << "Records in descending order of roll number are:\n";
+        while (currentNode != NULL) {
+            cout << i + 1 << ". " << currentNode->nuMo << " " << endl;
+            currentNode = currentNode->prev;
+            i--;
+        }
+
+    }
 };
 
 
