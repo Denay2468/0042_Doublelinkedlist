@@ -74,6 +74,14 @@ class DoublyLinkedList {
 
         Node *current = START;
 
+           while (current != NULL && current->nuMo != rollNo)
+            current = current->next;
+
+        if (current == NULL) {
+            cout << "Record not found" << endl;
+            return;
+        }
+
     }
 };
 
