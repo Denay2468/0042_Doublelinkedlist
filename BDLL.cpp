@@ -98,6 +98,24 @@ class DoublyLinkedList {
         cout << "Record with roll number " << rollNo << " deleted" << endl;
 
     }
+
+    void Traversal(){
+          if (START == NULL) {
+            cout << "sklist is empty" << endl;
+            return;
+        }
+
+        Node *currentNode = START;
+
+        cout << "Records in ascending order of roll number are:\n";
+        int i = 0;
+        while (currentNode != NULL) {
+            cout << i + 1 << ". " << currentNode->nuMo << " " << endl;
+            currentNode = currentNode->next;
+            i++;
+        }
+
+    }
 };
 
 
