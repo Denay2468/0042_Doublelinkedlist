@@ -54,6 +54,8 @@ class DoublyLinkedList {
             return;
         }
 
+         newNode->next = current->next;
+
            
     }
 };
